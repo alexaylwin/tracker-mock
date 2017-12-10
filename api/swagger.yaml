@@ -9,7 +9,7 @@ info:
   license:
     name: "Apache 2.0"
     url: "http://www.apache.org/licenses/LICENSE-2.0.html"
-host: "alexaylwin.com"
+host: "localhost"
 basePath: "/tracker/api"
 tags:
 - name: "activities"
@@ -119,11 +119,11 @@ definitions:
   ActivityRecord:
     type: "object"
     properties:
-      start-time:
+      startTime:
         type: "string"
-      end-time:
+      endTime:
         type: "string"
-      activity-id:
+      activityId:
         type: "integer"
 externalDocs:
   description: "Find out more about Swagger"

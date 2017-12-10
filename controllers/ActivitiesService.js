@@ -11,7 +11,22 @@ exports.addRecentActivity = function(args, res, next) {
    * activity ActivityRecord The activity to add
    * no response value expected for this operation
    **/
-  res.end();
+  console.log(args);
+  console.log(res);
+  var response = {
+    "startTime":"12:00 PM",
+    "endTime":"12:02 PM",
+    "activityId":1
+  };
+  console.log(response);
+
+  if(Object.keys(examples).length == 0) {
+    res.setHeader('Content-Type', 'application/json');
+    res.setHeader('Status', '200');
+    res.end(JSON.stringify(response || {}, null, 2));
+  } else {
+    res.end();
+  }
 }
 
 exports.getActivities = function(args, res, next) {
@@ -57,4 +72,3 @@ exports.getRecentActivities = function(args, res, next) {
     res.end();
   }
 }
-
