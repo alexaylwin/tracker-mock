@@ -20,7 +20,7 @@ exports.addRecentActivity = function(args, res, next) {
   };
   console.log(response);
 
-  if(Object.keys(examples).length == 0) {
+  if(Object.keys(response).length == 0) {
     res.setHeader('Content-Type', 'application/json');
     res.setHeader('Status', '200');
     res.end(JSON.stringify(response || {}, null, 2));
