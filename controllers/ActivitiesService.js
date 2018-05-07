@@ -2,7 +2,7 @@
 var recentMock = require('./recent-activities.mock.json');
 var activitiesMock = require('./activities.mock.json');
 
-exports.addRecentActivity = function(args, res, next) {
+exports.recordActivity = function(args, res, next) {
   /**
    * Record a completed activity
    * Record a completed activity for this user
@@ -51,7 +51,7 @@ exports.getActivities = function(args, res, next) {
   }
 }
 
-exports.getRecentActivities = function(args, res, next) {
+exports.getRecordedActivities = function(args, res, next) {
   /**
    * Get a users recent activities
    * 

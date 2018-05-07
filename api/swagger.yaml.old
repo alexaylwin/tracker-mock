@@ -25,18 +25,18 @@ tags:
 schemes:
 - "http"
 paths:
-  /activities/record/:
+  /activities/record/{userid}:
     get:
       tags:
       - "activities"
       summary: "Get a users recent activities"
       description: ""
-      operationId: "getRecordedActivities"
+      operationId: "getRecentActivities"
       produces:
       - "application/json"
       parameters:
       - name: "userid"
-        in: "query"
+        in: "path"
         description: "The user id for whom to retrieve activties"
         required: true
         type: "integer"
@@ -55,19 +55,19 @@ paths:
       - "activities"
       summary: "Record a completed activity"
       description: "Record a completed activity for this user"
-      operationId: "addRecordedActivity"
+      operationId: "addRecentActivity"
       consumes:
       - "application/json"
       produces:
       - "application/json"
       parameters:
       - name: "userid"
-        in: "query"
+        in: "path"
         description: "The user id"
         required: true
         type: "integer"
       - in: "body"
-        name: "activityRecord"
+        name: "activity"
         description: "The activity to add"
         required: true
         schema:
@@ -76,7 +76,7 @@ paths:
         200:
           description: "Success"
       x-swagger-router-controller: "Activities"
-  /activities/:
+  /activities/{userid}:
     get:
       tags:
       - "activities"
@@ -87,7 +87,7 @@ paths:
       - "application/json"
       parameters:
       - name: "userid"
-        in: "query"
+        in: "path"
         description: "The user id"
         required: true
         type: "integer"
@@ -99,30 +99,6 @@ paths:
             items:
               $ref: "#/definitions/Activity"
       x-swagger-router-controller: "Activities"
-    post:
-      tags:
-      - "activities"
-      summary: "Add an activity to a users activity list"
-      description: "Add a new activity to the user activity list"
-      operationId: "addActivity"
-      produces: 
-      - "application/json"
-      parameters:
-      - name: "userid"
-        in: "query"
-        description: "The user id"
-        required: true
-        type: "integer"
-      - name: "activity"
-        in: "body"
-        description: "The activity to add"
-        required: true
-        schema:
-          $ref: "#/definitions/Activity"
-      responses:
-        200:
-          description: "Success"
-        
 definitions:
   Activity:
     type: "object"

@@ -1,50 +1,114 @@
 [{
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
+    "startTime":{
+        "year":1990,
+        "monthValue":1,
+        "dayOfMonth":10,
+        "hour":23,
+        "minute":4,
+        "second":0
+    },
+    "endTime":{
+        "year":1990,
+        "monthValue":1,
+        "dayOfMonth":10,
+        "hour":23,
+        "minute":54,
+        "second":0        
+    },
     "activityId":1
 },
 {
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
+    "startTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":15,
+        "hour":5,
+        "minute":40,
+        "second":13
+    },
+    "endTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":15,
+        "hour":6,
+        "minute":30,
+        "second":0
+    },
+    "activityId":2
 },
 {
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
+    "startTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":16,
+        "hour":5,
+        "minute":40,
+        "second":13
+    },
+    "endTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":16,
+        "hour":6,
+        "minute":30,
+        "second":0
+    },
+    "activityId":2
 },
 {
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
+    "startTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":17,
+        "hour":5,
+        "minute":40,
+        "second":13
+    },
+    "endTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":17,
+        "hour":6,
+        "minute":30,
+        "second":0
+    },
+    "activityId":2
 },
 {
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
+    "startTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":18,
+        "hour":5,
+        "minute":40,
+        "second":13
+    },
+    "endTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":18,
+        "hour":6,
+        "minute":30,
+        "second":0
+    },
+    "activityId":2
 },
 {
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
-},
-{
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
-},
-{
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
-},
-{
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
-},
-{
-    "startTime":"12:00 PM",
-    "endTime":"12:02 PM",
-    "activityId":1
+    "startTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":19,
+        "hour":5,
+        "minute":40,
+        "second":13
+    },
+    "endTime":{
+        "year":2018,
+        "monthValue":5,
+        "dayOfMonth":19,
+        "hour":6,
+        "minute":30,
+        "second":0
+    },
+    "activityId":2
 }]
